@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome to the Dashboard</h2>
+    <p>This is a protected area only accessible to logged-in users.</p>
+
+    <ul>
+        <li><a href="{% url 'report' %}">Report a Crime</a></li>
+        <li><a href="{% url 'fetch' %}">View All Cases</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+
+    <h2>Police Section</h2>
+    <ul>
+        <li><a href="{% url 'police_register' %}">Register as Police</a></li>
+        <li><a href="{% url 'police_login' %}">Police Login</a></li>
+    </ul>
+</body>
+</html>
 
